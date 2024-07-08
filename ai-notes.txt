@@ -1,0 +1,20 @@
+AI talk:
+
+Premise - let's talk about AI and how we should position it in GNOME and in the App Ecosystem. 
+
+Background:
+I run an AI Innovator programs where members of that program are training models, and solving problems using AI.  
+
+What is AI exactly?
+
+Series of algorithms that has a sophisticated way of matching patterns with a level of probabiliyt or confidence.
+Using mathematical models, we can predict if something matches a pattern or not. 
+
+Machine learning
+
+You can teach an algorithm a pattern running them against a set of structured data. This data can come from a wide variety of 
+sources. Sometimes it comes from analog sources that are converted to digital. Software that takes a soundwave and converts it 
+to text - that process, is done through applied linguistics.
+
+Kinds of AI
+Generative AI and 
