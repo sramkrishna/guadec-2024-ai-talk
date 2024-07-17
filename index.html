@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/dracula.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -20,20 +20,233 @@
           <h2> AI - Navigating the chaos!<p> 🙀 🙀 🙀 </h2>
           <h3> Sriram Ramkrishna </h3>
         </section>
-				<section>
-          <h3> This talk is not about convincing you to use AI </h3>
+        <section>
+          <h3> Who am I? </h3>
+          <p> <b>Sri Ramkrishna</b>, looooong term contributor to the GNOME project<p> 
+          <p>Community Management and Advocacy </p>
+          <p>Intel Corp - Senior Community Manager for oneAPI</p>
+          <p>Event Planner and Program Manager for Developer Outreach Programs</p>
+          <img height=200 src="sri-photo.jpg"/>
         </section>
 				<section>
-          <h3> This talk is about is thinking about how to manage AI from now to the future </h3>
-        </section>
-				<section>
-          <h3> It would be great to manage a discussion on where this could be useful. </h3>
+          <h3> I am not here to convince you to use AI  </h3>
+          <img src="matrix-ai.png"></img>
         </section>
         <section>
-          <h4> Let's talk about what the world of AI currently looks like.<p>
-            To level set, we'll define some terms so that we are all on the same page. <p>
-          </h4>
-			</div>
+          <h3>Instead let's brainstorm how we harness AI equitably and responsibly within the GNOME ecosystem</h3>
+        </section>
+        <section>
+          <h4> Before we do that...</h4>
+          <p> What does AI look like today?</p>
+        </section>
+        <section>
+          <h4> Disclaimers: </h4>
+          <p>I'm no AI expert. I'm learning just like you. </p>
+          <p> My opinions are my own and not my employers. </p>
+        </section>
+        <section>
+          <img src="WorldofAI.png"/>
+        </section>
+        <section>
+          <h4> Deep Learning</h4>
+          <p>
+          <p> Deep Learning algorithm broken down into </p> 
+          <p> <b>supervised</b> vs <b>unsupervised</b> </p>
+        </section>
+        <section>
+          <h4> Deep Learning Algorithm Types </h4>
+            [replace with a visual, also define what is deep learning?]
+          <p> Supervised deep learning algorithms consume structured data </p>
+          <p> Unsupervised deep learning algorithms use neural networks consume unstructured data <p>
+        </section>
+        <section>
+          <h4> Unsupervised deep learning algorithms </h4>
+          <p>
+          Create predictive models using a neural network to parse and recognize patterns
+        </section>
+        <section>
+          <h4> LLMs - Large Language Models </h4>
+          <p>
+          LLM is the technology behind ChatGPT, CoPilot and other generative AI models.
+        </section>
+        <section>
+          <h4> How do LLMs work? </h4>
+          <p>
+          The foundation of an LLM is built upon neural networks.
+[add a visual]
+          <p>These neural networks hold massive amounts of unstructured data to teach the LLM to help it recognize patterns.</p>
+
+        </section>
+        <section>
+          Industries and R&D are delving deep to teach new LLMs to ideate novel approaches to age-old problems.
+        </section>
+        <section>
+          Ultimately, AI at its essence is a mechanism that discovers patterns through probabilities and then applies them in a predictive fill-in-the-blanks or Mad-Libs.
+        </section>
+        <section>
+          <h4> RAG and GraphRAG </h4>
+          This field is rapidly poliferating and it is already hard to keep up as new approaches are invented seemingly every day.
+          <p>
+          <ol>
+            <li>RAG - Retrieval Augmented Generation </li>
+            <li>GraphRAG - Hierarchical approach to RAG </li>
+        </section>
+        <section>
+          Training an LLM is only one part of AI
+        </section>
+        <section>
+          <h4> Inferencing </h4>
+          <p>
+          Inferencing tests the correctness of an AI LLM model. 
+          <p>It uses real-time data to validate if a response is correct.
+        </section>
+        <section>
+          <h4> The high cost of AI </h4>
+
+          The cost of AI is high both from a carbon impact and compute perspective.
+        </section>
+        <section>
+          <h4> Why? </h4>
+
+          <ol>
+            <li> It takes millions of dollars to train one LLM model.</li>
+            <li> It requires 1000s of GPUs in a distributed cluster to train a new LLM model. </li>
+            <li> Carbon emissions from data centers emit an estimated 300,000 kg of carbon dioxide which is the equivalent of 125 round-trip flights between New York and Beijing<sup>1</sup></li>
+          </ol>
+
+          <p>According to wikipedia there are 54 major LLMs. Some are derivative or forks of other LLMs.</p>
+          <div style="text-align: left; font-size: smaller">1: https://www.nature.com/articles/s42256-020-0219-9</div>
+        </section>
+
+        <section>
+          <h4> AI Software Toolchain </h4>
+          <p> By and large, the AI toolchains that teach and validate LLMs are open source.</p>
+          <ol>
+            <li> Tensorflow (https://tensorflow.org) </li>
+            <li> Pytorch (https://pytorch.org) </li>
+          </ol>
+        </section>
+        <section>
+          <h4> Open Source LLMs </h4>
+          <ol>
+            <li> LLaMA - by Meta </li>
+            <li> BLOOM - by Hugging Face </li>
+            <li> BERT - by Google </li>
+          </ol>
+        </section>
+        <section>
+          <h4> Open Source Inferencing </h4>
+          <ol>
+            <li> OpenVINO (https://openvino.ai/) </li>
+            <li> OpenPPL (https://openppl.ai)</li>
+            <li> Ctranslate2 (https://github.com/OpenNMT/CTranslate2)</li>
+          </ol>
+        </section>
+            
+        <section>
+          <h4> Free Software and AI </h4>
+          <p>
+          <p>The OSI's position -  AI is unprecedented in open source.</p> 
+
+          OSI's largest issues is "Data and Certification"<p>
+          <ol>
+            <li> How do you determine if a system is certified as 'open source AI'?</li>
+            <li> What constitutes data in an AI environment? </li>
+          </ol>
+
+          [1] https://thenewstack.io/open-source-ai-osi-wrestles-with-a-definition/
+        </section>
+        <section>
+          <h4> A debate about data used for LLMs </h4>
+          <p> 
+          The OSI's current draft on open source AI (as of June 2024) focuses on code and the 4 freedoms, but not the data. [1]
+
+          <p>Critics say - you can't have an LLM without data.</p> 
+          <p>AI models should disclose their training data. The data is part of the entire landscape of AI and must be considered as part of open source. </p> 
+          <p>The definition of open source AI need to be redefined to include.</p>
+
+          [1] - https://thenewstack.io/open-source-ai-what-about-data-transparency/
+        </section>
+        <section>
+          <h4> The criticality of open source AI </h4>
+          <p>
+          <p> Understanding where the training data comes from will help determine the equity and accessibility of AI </p>
+          <ol>
+            <li> The Global South comunities cannot build AI programs and LLMs on their own. They can't afford to pay OpenAI.</li>
+            <li> The Global South need open source, open global standards and interoperabilities to address their health, climate ,and education needs.</li>
+            <li> The data itself needs to analyzed. A recent LLM (LAION-5B) an image generation LLM was trained on child sexual abuse images. </li>
+          </ol>
+        </section>
+        <section>
+          <h4> Ethical concerns about AI </h4>
+          <ol>
+            <li> Harvesting of data against the will of their creators. </li>
+            <li> Training on dubious data that might train an AI to perpetuate racial, class, cultural, religious, and gender injustices. </li>
+            <li> Climate and Carbon footprint of inferencing and training and climate change. </li>
+            <li> Politicization of AI. </li>
+            <li> Fraud, criminality, identity theft, and propaganda through generative AI </li>
+          </ol>
+        </section>
+        <section>
+          <h4> AI the Hype Train </h4>
+
+          <p> There is a lot of hype around AI on what it can and can't do. </p>
+          <p> We've been here before - with the growth of the Internet. </p>
+
+          <p> Like the Internet, AI is here to stay - we need to manage our change. </p>
+          <p> AI investment by Goldman Sachs is going to approach $200 billion globally by 2025.<sup>1</sup> </p>
+          <div style="text-align: left; font-size: smaller">1: https://www.goldmansachs.com/intelligence/pages/ai-investment-forecast-to-approach-200-billion-globally-by-2025.html </div>
+        </section>
+        <section>
+<style>
+.reveal .smaller p {
+  font-size: 50%
+}
+</style>
+          <h4> Hardware and AI </h4>
+          <p>
+          <p> Hardware companies are rolling out hardware optimized to use AI. </p>
+
+          <p>AIPC laptops with support for neural network processors built in. These NPU (neural processing units) will speed up the neural network pieces when buliding LLMS. These laptops will be available in the 2nd half of the year.</p>
+
+          <ul>
+            <li> Intel coming out with Lunar Lake in Laptops  Aim to speed up artificial neural network tasks. <sup>1</sup></li>
+            <li> AMD has Ryzen with XDNA driver (https://github.com/amd/xdna-driver)
+            <li> Qualcomm Snapdragon X Elite (https://www.qualcomm.com/developer/blog/2024/05/upstreaming-linux-kernel-support-for-the-snapdragon-x-elite)
+            <li> Nvidia is supporting AIPC through their RTX AI toolkit (only targeting Windows)</li>
+          </ul>
+          <div style="text-align: left; font-size: smaller">1: https://www.goldmansachs.com/intelligence/pages/ai-investment-forecast-to-approach-200-billion-globally-by-2025.html </div>
+        </section>
+
+        <section>
+          <h4> GNOME and AI </h4>
+
+          <p> The GNOME Foundation and by the extension the GNOME Project needs to take a political position on AI.  </p>
+          <p> We need to work with the FSF, Software Freedom Conservancy, OSI, KDE, and others to define where AI fits in our ecosystem. </p>
+          <p> 
+        </section>
+        <section>
+          <h4>Leveraging AI in GNOME Today </h4>
+            AI we mentioned before is essentially predictive model based on pattern matching </p></li>
+          <ul>
+            <li> <p> Idea: Find ways to use AI to help ease code maintainership - by specifcally training on GObject code and best practices </p></li>
+            <li> <p> Idea: train on issues in Gitlab and experiment with triage. </p></li>
+            <li> <p> Idea: train on our documentation. </p></li>
+          </ol>
+        </section>
+        <section>
+          <h4> Call for Action: Try out AI </h4>
+          <p> You can try out these large language models on your laptop today. </p>
+          <ul>
+            <li><p> Alpaca - https://flathub.org/apps/com.jeffser.Alpaca </p> </li>
+            <li> The AI community has their own 'github-like' place called 'HuggingFace' (https://huggingface.co/)</li>
+          </ul>
+        </section>
+        <section>
+          <h4> Questions / Discussion </h4>
+          <p> Love to hear your thoughts!
+        </section>
+	 		</div>
 		</div>
 
 		<script src="dist/reveal.js"></script>
